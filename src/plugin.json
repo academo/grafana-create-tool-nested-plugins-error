@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "app",
+  "name": "Error Nested Plugins App",
+  "id": "academo-errornestedplugins-app",
+  "backend": true,
+  "executable": "gpx_error_nested_plugins_app",
+  "info": {
+    "keywords": ["app"],
+    "description": "Error test",
+    "author": {
+      "name": "Academo"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Default",
+      "path": "/a/%PLUGIN_ID%",
+      "role": "Admin",
+      "addToNav": true,
+      "defaultNav": true
+    }
+  ],
+  "dependencies": {
+    "grafanaDependency": ">=9.2.5",
+    "plugins": []
+  }
+}

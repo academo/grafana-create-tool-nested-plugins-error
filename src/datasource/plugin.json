@@ -1,0 +1,17 @@
+{
+  "type": "datasource",
+  "name": "Grafana SecObs",
+  "id": "grafana-vulnerabilityobs-datasource",
+  "category": "security",
+  "metrics": true,
+  "backend": true,
+  "alerting": true,
+  "executable": "../gpx_vulnerabilityobs",
+  "info": {
+    "description": "Connect to Grafana SecObs.",
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    }
+  }
+}
